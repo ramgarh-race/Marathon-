@@ -1,0 +1,109 @@
+/* FAQ Section Styling */
+.faq-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-top: 3px solid #ff6600;
+  }
+  
+  .faq-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #444;
+    font-weight: 700;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-question:hover {
+    background-color: #ff6600;
+    color: #fff;
+  }
+  
+  .faq-answer {
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #555;
+    background-color: #f1f1f1;
+    display: none;
+  }
+  
+  /* Show answer when question is clicked */
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  /* Expand/Collapse icon animation */
+  .faq-item.active .faq-question .material-icons {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-question .material-icons {
+    transition: transform 0.3s ease;
+  }
+
+  /* Navigation */
+.navbar {
+    background: #e2e9ce;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    font-size: 1.1em;
+    padding: 8px 20px;
+    color: #fff;
+    background: linear-gradient(90deg, #edc33a, #d89014);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.navbar a span.material-icons {
+    font-size: 1.3em;
+    margin-right: 8px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Hover Effect */
+.navbar a:hover {
+    background: linear-gradient(90deg, #388e3c, #2e7d32);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.navbar a:hover span.material-icons {
+    color: #ffc107; /* Highlight the icon on hover */
+    transform: rotate(20deg); /* Slight rotation effect */
+}
+
+.navbar a:hover {
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7);
+}
